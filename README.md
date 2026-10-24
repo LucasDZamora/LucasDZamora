@@ -51,14 +51,13 @@ Planificación y desarrollo de un sistema de gestión de archivos físicos en bo
 ## 🚀 Proyectos destacados
 
 ### 🤖 [Asistente ChileAtiende con RAG](https://github.com/GabrielSanzana/LLM)
-*Colaborador principal*
 
 Agente conversacional que responde consultas ciudadanas sobre trámites, leyes y beneficios del Estado de Chile, basado en documentación oficial de ChileAtiende, y que agenda recordatorios del trámite en Google Calendar.
 
-- **RAG:** más de 40 documentos oficiales indexados en ChromaDB con embeddings `BAAI/bge-m3` (Hugging Face) y multi-query retrieval para evitar respuestas inventadas.
+- **RAG:** más de 40 documentos oficiales indexados en ChromaDB y multi-query retrieval para evitar respuestas inventadas.
 - **Agente:** grafo de estados en LangGraph (clasificación de intención, recuperación, extracción y validación de datos, síntesis) con function calling sobre LLMs de Groq. Incluye variantes ReAct y Plan-and-Execute, más un script de evaluación de agentes.
-- **Integraciones:** Google Calendar API con Service Account; crea el evento con los requisitos del trámite en la descripción.
-- **Stack:** Python · FastAPI · LangChain · LangGraph · Groq · ChromaDB · React · Vite · Tailwind CSS
+- **Integraciones:** Google Calendar API, crea el evento con los requisitos del trámite en la descripción.
+- **Stack:** Python · FastAPI · LangChain · LangGraph · Groq · ChromaDB · React · Vite
 
 ### Otros proyectos
 
