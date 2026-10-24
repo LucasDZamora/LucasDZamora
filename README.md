@@ -1,7 +1,7 @@
 # Hola, soy Lucas Zamora 👋
 
 Estudiante de **Ingeniería Civil Informática** en la Pontificia Universidad Católica de Valparaíso (PUCV), Chile.
-Me interesa el desarrollo **fullstack** y **móvil**: construir sistemas completos, desde la base de datos hasta la interfaz.
+Me interesa el desarrollo **fullstack**: construir sistemas completos, desde la base de datos hasta la interfaz.
 
 - 🔭 Desarrollo web con Vue/Nuxt + Laravel y React + FastAPI
 - 📱 Apps multiplataforma con Bluetooth Low Energy (BLE)
