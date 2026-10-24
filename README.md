@@ -1,11 +1,11 @@
 # Hola, soy Lucas Zamora 👋
 
 Estudiante de **Ingeniería Civil Informática** en la Pontificia Universidad Católica de Valparaíso (PUCV), Chile.
-Me interesa el desarrollo **fullstack**: construir sistemas completos, desde la base de datos hasta la interfaz.
+Me interesa el desarrollo **fullstack** y **móvil**: construir sistemas completos, desde la base de datos hasta la interfaz.
 
 - 🔭 Desarrollo web con Vue/Nuxt + Laravel y React + FastAPI
 - 📱 Apps multiplataforma con Bluetooth Low Energy (BLE)
-- 🤖 Interesado en flujos de trabajo con IA y agentes
+- 🤖 Agentes LLM con RAG y tool calling (LangGraph, ChromaDB)
 - 🌎 Español nativo · Inglés B2
 
 ## 🛠️ Tecnologías
@@ -29,6 +29,13 @@ Me interesa el desarrollo **fullstack**: construir sistemas completos, desde la 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 
+**IA y LLM**
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=langgraph&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=flat&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6446?style=flat&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat&logo=huggingface&logoColor=black)
+
 **Herramientas**
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
@@ -42,6 +49,18 @@ App multiplataforma (Android/iOS) para configurar y monitorear en tiempo real es
 Planificación y desarrollo de un sistema de gestión de archivos físicos en bodega con Vue, Nuxt, Laravel y PostgreSQL.
 
 ## 🚀 Proyectos destacados
+
+### 🤖 [Asistente ChileAtiende con RAG](https://github.com/GabrielSanzana/LLM)
+*Colaborador principal*
+
+Agente conversacional que responde consultas ciudadanas sobre trámites, leyes y beneficios del Estado de Chile, basado en documentación oficial de ChileAtiende, y que agenda recordatorios del trámite en Google Calendar.
+
+- **RAG:** más de 40 documentos oficiales indexados en ChromaDB con embeddings `BAAI/bge-m3` (Hugging Face) y multi-query retrieval para evitar respuestas inventadas.
+- **Agente:** grafo de estados en LangGraph (clasificación de intención, recuperación, extracción y validación de datos, síntesis) con function calling sobre LLMs de Groq. Incluye variantes ReAct y Plan-and-Execute, más un script de evaluación de agentes.
+- **Integraciones:** Google Calendar API con Service Account; crea el evento con los requisitos del trámite en la descripción.
+- **Stack:** Python · FastAPI · LangChain · LangGraph · Groq · ChromaDB · React · Vite · Tailwind CSS
+
+### Otros proyectos
 
 | Proyecto | Descripción | Stack |
 |---|---|---|
